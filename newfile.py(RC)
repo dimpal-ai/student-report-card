@@ -1,0 +1,26 @@
+name = input("Enter student name: ")
+roll = input("Enter roll number: ")
+
+math = int(input("Enter Math marks: "))
+science = int(input("Enter Science marks: "))
+english = int(input("Enter English marks: "))
+
+total = math + science + english
+average = total / 3
+
+# Grade logic
+if average >= 90:
+    grade = "A"
+elif average >= 75:
+    grade = "B"
+elif average >= 60:
+    grade = "C"
+else:
+    grade = "D"
+
+print("\n--- Report Card ---")
+print("Name:", name)
+print("Roll No:", roll)
+print("Total Marks:", total)
+print("Average:", average)
+print("Grade:", grade)
